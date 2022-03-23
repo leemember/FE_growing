@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+### 3/22
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SSH 란 ? 자유이용권 같은 것이다. 내 컴퓨터의 고유한 값이다. (너 누구냐고 안물어보게)
+깃허브에 SSH를 심어준다. 이제 올릴 때 이 컴퓨터에 한에서 인증을 안해도 된다.
 
-## Available Scripts
+```
+git remote set-url origin [나의 SSH]
+```
 
-In the project directory, you can run:
+🐤 글로벌로 설치하는 이유, 그에 단점
 
-### `npm start`
+- 단점 : 내 컴퓨터 용량을 먹는다는 것이다. 최악의 단점으로는 프론트는 버전이 너무 빠르게 변하기 떄문에 나도 모르게 올라간 적이 많다. 근데 글로벌로 설치하는 순간 그 버전으로 머물러있다. 그래서 그것을 보완해주는 것이 npx이다.
+- npx 장점 : 글로벌에 깔려있는 것처럼 동작하도록 도와준다. 그래서 버전을 신경 쓰지 않아도 된다. 내 컴퓨터의 용량을 먹지도 않는다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🐤 가상돔 (Virture DOM)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 제이쿼리 자바스크립트로 돔을 건드려서 작업을 하면 브라우저가 힘들어한다. 왜냐 바뀌어가는 레이아웃을 계속 계산하고 계속 변하기 때문이다.
+- 가상의 돔에다가 변화를 기록한다. 그래서 변화가 끝나면 화면에 가상돔으로 돔을 갈아치운다. 변경사항을 반영한다.
+  여기서 리액트가 강조하는게 결국 화면을 다 리렌더링 하는 것이 아니냐 라고 할텐데. 리액트가 말하길 우리는 변화가 생기는 부분만 빠르게 캐치를해서 그 부분만 갈아치울 수 있다.라고 함. 그래서 제이쿼리가 100번의 변화를 주면 100번이나 브라우저가 힘들어한다. 근데 리액트는 100번을 1번으로 줄여서 한 번에 모아뒀다가 변화를 준다.
 
-### `npm test`
+  🐤 리액트 쓰는 이유
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - 가상돔
+  - 컴포넌트 단위의 개발
 
-### `npm run build`
+🐤 코드 스플리팅
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 내가 필요한 페이지의 정보만 가져온다.
+- 최적화를 해준다.
