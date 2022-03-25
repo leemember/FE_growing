@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>별찍기</title>
+  </head>
+  <body>
+    <h1>별찍기</h1>
+  </body>
+  <script>
+    const line = 5;
+
+    // 직삼각형
+    for (let i = 1; i <= line; i++) {
+      let triangle = "";
+
+      for (let j = 1; j <= i * 2 - 1; j++) {
+        triangle = triangle + "*";
+      }
+
+      console.log(triangle);
+    }
+
+    // 정삼각형
+    for (let i = 1; i <= line; i++) {
+      let triangle = "";
+
+      for (let k = 1; k <= line - i; k++) {
+        triangle = triangle + " ";
+      }
+
+      for (let j = 1; j <= i * 2 - 1; j++) {
+        triangle = triangle + "*";
+      }
+
+      console.log(triangle);
+    }
+  </script>
+</html>
