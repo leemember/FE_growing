@@ -26,7 +26,9 @@
         }, 300 * (list))
         // 80 수 이상일 때
         } else if (list >= 80) {
-       
+            setInterval(() => {
+                console.log(list)
+            },300 * (list + 1));
         }
     }
 </script>
