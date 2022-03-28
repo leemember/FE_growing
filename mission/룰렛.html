@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>룰렛 만들기</title>
+</head>
+<body>
+</body>
+<script>
+    // 속도 (기본값 0.3초)
+    var time = 0.3;
+
+    // 입력받은 값이 80미만은 0.3 그 이상은 10%씩 늘어나야한다. (for문 써서 10%씩 늘리기)
+    var timeUp = time * 10;
+
+    // 입력 받은 값
+    var number = window.prompt();
+
+    // 룰렛이 돌아간다~~
+    for (let list = 1; list < number; list++) {
+        if (list < 80) {
+            setTimeout(() => {
+            console.log(list)
+        }, 300 * (list))
+        // 80 수 이상일 때
+        } else if (list >= 80) {
+       
+        }
+    }
+</script>
+</html>
