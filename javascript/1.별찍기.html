@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별 찍어보자</title>
+</head>
+<body>
+    <h3>별을 찍어봅시당</h3>
+</body>
+<script>
+  const level = 5;
+
+  // -----------------------------------------
+for (let i = 1; i <= level; i++) {
+  let tree = "";
+
+  for (let j = 1; j <= i * 2 - 1; j++) {
+    tree = tree + "*";
+  }
+
+  console.log(tree);
+}
+
+// -----------------------------------------
+
+for (let i = 1; i <= level; i++) {
+  let tree = "";
+
+  for (let k = 1; k <= level - i; k++) {
+    tree = tree + " ";
+  }
+
+  for (let j = 1; j <= i * 2 - 1; j++) {
+    tree = tree + "*";
+  }
+
+  console.log(tree);
+}
+</script>
+</html>
