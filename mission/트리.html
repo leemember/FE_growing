@@ -1,4 +1,4 @@
-ㅌ<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,26 +11,14 @@
   </body>
   <script>
     const line = 5;
-    const line2 = 5;
-
-    for (let i = 1; i <= line; i++) {
+    const line2 = 8;
+    const line3 = 6;
+   
+    // 1단 나무
+    for (let i = 0; i <= line; i++) {
       let triangle = "";
 
-      for (let k = 1; k <= line - i; k++) {
-        triangle = triangle + " ";
-      }
-
-      for (let j = 1; j <= i * 3 - 2; j++) {
-        triangle = triangle + "*";
-      }
-
-      console.log(triangle);
-    }
-
-    for (let i = 2; i <= line2; i++) {
-      let triangle = "";
-
-      for (let k = 1; k <= line2 - i; k++) {
+      for (let k = 1; k <= line - i + 4; k++) {
         triangle = triangle + " ";
       }
 
@@ -41,18 +29,35 @@
       console.log(triangle);
     }
 
-    for(let i=1; i<= line; i++){
+
+    // 2단 나무
+    for (let i = 3; i <= line2; i++) {
       let triangle = "";
-      
-      for (let k = 1; k < 3; k++) {
+
+      for (let k = 1; k <= line2 - i + 2; k++) {
         triangle = triangle + " ";
       }
 
-    	for(let j=1; j<9; j++){
+      for (let j = 1; j <= i * 3 - 1; j++) {
         triangle = triangle + "*";
+      }
+
+      console.log(triangle);
+    }
+
+    // 나무 다리
+    for(let i=1; i<= line3; i++){
+      let tree = "";
+      
+      for (let k = 1; k < 10; k++) {
+        tree = tree + " ";
+      }
+
+    	for(let j=1; j<9; j++){
+        tree = tree + "*";
 	}
 
-  console.log(triangle);
+  console.log(tree);
 }
 
     

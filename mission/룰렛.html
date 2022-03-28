@@ -9,27 +9,38 @@
 <body>
 </body>
 <script>
-    // 속도 (기본값 0.3초)
-    var time = 0.3;
-
-    // 입력받은 값이 80미만은 0.3 그 이상은 10%씩 늘어나야한다. (for문 써서 10%씩 늘리기)
-    var timeUp = time * 10;
 
     // 입력 받은 값
     var number = window.prompt();
 
-    // 룰렛이 돌아간다~~
+    let time = 0.3;
+
+    // 룰렛이 돌아간다~~    
     for (let list = 1; list < number; list++) {
-        if (list < 80) {
-            setTimeout(() => {
-            console.log(list)
-        }, 300 * (list))
-        // 80 수 이상일 때
-        } else if (list >= 80) {
-            setInterval(() => {
+
+        
+        let timeUp = time * 1.1;
+      
+        setTimeout (() => {
+            if (list < 80) {
                 console.log(list)
-            },300 * (list + 1));
-        }
+            } else if (list >= 80) {
+                console.log(list)
+            }
+        }, 300 * (list * 0.6))
+
+
+        // if (list < 80) {
+        //     setTimeout(() => {
+        //     console.log(list)
+        // }, 300 * (list * 0.3))
+
+        // // 80 수 이상일 때
+        // } else if (list >= 80) {
+        //     setTimeout(() => {
+        //         console.log(list)
+        //     },300 * (list * 10));
+        // }
     }
 </script>
 </html>
