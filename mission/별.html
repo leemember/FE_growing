@@ -10,21 +10,48 @@
     
 </body>
 <script>
-    const line = 5;
+let n = 5;
+let string = "";
+const line3 = 3;
 
-    // 별 위에 꼬다리
-    for (let i = 1; i <= line; i++) {
-      let triangle = "";
+// 별 머리통
+for (let i = 1; i <= n; i++) {  
+  for (let j = n; j > i; j--) {
+    string += " ";
+  }
 
-      for (let k = 1; k <= line - i; k++) {
-        triangle = triangle + " ";
-      }
+  for (let k = 0; k < i * 2 - 1; k++) {
+    string += "*";
+  }
+  string += "\n";
+}
 
-      for (let j = 1; j <= i * 2 - 1; j++) {
-        triangle = triangle + "*";
-      }
+// 평행사변형 만들기
+// 3줄 찍기
+// 점점 줄어들도록 하기
+for(let i = 1; i<= line3; i++){
+  for (let k = 1; k <= 1; k++) {
+    string += " ";
+  }
 
-      console.log(triangle);
-    }
+  for(let j=1; j<11; j++){
+    string += "*";
+  }
+  string += "\n";
+}
+
+// 삼각형 뒤집기 (별 꼬다리)
+for (let i = 1; i <= n - 1; i++) {  
+  for (let j = 0; j < i; j++) {
+    string += " ";
+  }
+  for (let k = (n - i) * 2 - 1; k > 0; k--) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+
+
 </script>
 </html>
