@@ -24,35 +24,46 @@
      * 재 실행
      * 
     */
-
+    
     // 입력 받은 값
-    var number = window.prompt();
-
-    // 입력값에 80%
-    var maxNumber = number * 0.8;
-
-    let time = 0.3;
-
-    // 룰렛이 돌아간다~~
-    function rollette () {
-        for (let list = 1; list < number; list++) {
-        let timeUp = time * 1.1;
-              
-        if (list < maxNumber) {        
-            console.log('[1]', list,' | ', time);
-        } else if (list >= maxNumber) {
-            // 80%일때 time이 10%씩 증가
-            time += time * 0.1;
-            console.log('[2]', list, ' | ', time)
-        }
-    }
-    }
-
-    rollette();
+    var number = window.prompt('숫자를 입력해주세요');
     
+     // 입력값에 80%
+     var maxNumber = number * 0.8;
     
+     // 80% 미만일 때
+     let time = 0;
     
+     // 0.3초씩 누적해서 등장하도록
+     const interval = 300;
+     
 
+     // 룰렛이 돌아간다~~
+     for (let list = 1; list <= number; list++) {
+        /**
+         * 80% 미만일 때
+         * 디폴트 0.3 초로 출력되도록
+         * */ 
+         if (list < maxNumber) {
+            time += interval
+
+            setTimeout((delayTime) => {
+                console.log('[1]', list,' | ', delayTime); 
+            }, time, time);
+        } 
+       /**
+         * 80% 이상일 때는 출력되는 시간이 (time * 10%) 이처럼 증가된다.
+         * */
+
+        else {            
+            time *=  1.1;
+
+            setTimeout((delayTime)=> {
+                console.log('[2]', list, ' | ', delayTime)
+            }, time, time)
+        }               
+    } 
+     
     
 </script>
 </html>
