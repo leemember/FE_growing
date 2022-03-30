@@ -9,49 +9,122 @@
 <body>
     
 </body>
-<script>
-let n = 5;
-let string = "";
-const line3 = 3;
-
-// 별 머리통
-for (let i = 1; i <= n; i++) {  
-  for (let j = n; j > i; j--) {
-    string += " ";
+<script>let n = 5;
+  let string = "";
+  let body = 12;
+  let lag = body / 3;
+  
+  // ---------------------------------
+  /**
+   * 별 머리통
+   */
+  for (let i = 0.5; i <= n; i++) {
+    for (let j = n * (n / 2); j > i; j--) {
+      string += " ";
+    }
+  
+    for (let k = 2; k < i * 2; k++) {
+      string += "*";
+    }
+    string += "\n";
   }
-
-  for (let k = 0; k < i * 2 - 1; k++) {
-    string += "*";
+  
+  // ---------------------------------
+  /**
+   * 별 몸통
+   * 평행사변형 만들기
+   * 3줄 찍으면 됨
+   */
+  for (let i = 1; i <= 1; i++) {
+    // X축으로 14개 찍히기 body = 11임
+    for (let k = 1; k <= body; k++) {
+      // 바디만큼 돌 수록 줄어들어야함
+      for (let n = i * 2 - 1; n <= 1; n++) {
+        string += "-";
+      }
+      string += "*";
+    }
+  
+    string += "\n";
   }
-  string += "\n";
-}
-
-// 평행사변형 만들기
-// 3줄 찍기
-// 점점 줄어들도록 하기
-for(let i = 1; i<= line3; i++){
-  for (let k = 1; k <= 1; k++) {
-    string += " ";
+  
+  for (let i = 1; i <= 1; i++) {
+    string += "  ";
+    // X축으로 14개 찍히기 body = 11임
+    for (let k = 1; k <= body - 2; k++) {
+      // 바디만큼 돌 수록 줄어들어야함
+      for (let n = i * 2 - 1; n <= 1; n++) {
+        string += "-";
+      }
+      string += "*";
+    }
+  
+    string += "\n";
   }
-
-  for(let j=1; j<11; j++){
-    string += "*";
+  
+  for (let i = 1; i <= 1; i++) {
+    string += "   ";
+    // X축으로 14개 찍히기 body = 11임
+    for (let k = 1; k <= body - 3; k++) {
+      // 바디만큼 돌 수록 줄어들어야함
+      for (let n = i * 2 - 1; n <= 1; n++) {
+        string += "-";
+      }
+      string += "*";
+    }
+  
+    string += "\n";
   }
-  string += "\n";
-}
-
-// 삼각형 뒤집기 (별 꼬다리)
-for (let i = 1; i <= n - 1; i++) {  
-  for (let j = 0; j < i; j++) {
-    string += " ";
+  
+  for (let i = 1; i <= 1; i++) {
+    string += "  ";
+    // X축으로 14개 찍히기 body = 11임
+    for (let k = 1; k <= body - 2; k++) {
+      // 바디만큼 돌 수록 줄어들어야함
+      for (let n = i * 2 - 1; n <= 1; n++) {
+        string += "-";
+      }
+      string += "*";
+    }
+  
+    string += "\n";
   }
-  for (let k = (n - i) * 2 - 1; k > 0; k--) {
-    string += "*";
+  
+  for (let i = 1; i <= 1; i++) {
+    // X축으로 14개 찍히기 body = 11임
+    for (let k = 1; k <= body; k++) {
+      // 바디만큼 돌 수록 줄어들어야함
+      for (let n = i * 2 - 1; n <= 1; n++) {
+        string += "-";
+      }
+      string += "*";
+    }
+  
+    string += "\n";
   }
-  string += "\n";
-}
-console.log(string);
-
-
+  
+  // ---------------------------------
+  // 삼각형 뒤집기 (별 다리
+  for (let i = 1; i <= n - 1; i++) {
+    // 왼쪽 다리 (lag = 공백)
+    for (let j = 1; j < i + lag; j++) {
+      string += " ";
+    }
+    for (let k = (n - i) * 2 - 1; k > 0; k--) {
+      string += "*";
+    }
+  
+    // 오른쪽 다리
+    for (let j = 0; j < i; j++) {
+      string += "  ";
+    }
+  
+    for (let k = (n - i) * 2 - 1; k > 0; k--) {
+      string += "*";
+    }
+    string += "\n";
+  }
+  console.log(string);
+  
 </script>
 </html>
