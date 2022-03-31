@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>룰렛 만들기</title>
+</head>
+<style>
+    .roulette {
+        position: relative;
+        width: 400px;
+        height: 400px;
+    }
+    .roulette-bg {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        background-color: pink;
+    }
+    #item {
+        width:20%;
+        height:20%;
+        transform-origin: center;
+        float: right;
+        background-image: url("https://mblogthumb-phinf.pstatic.net/20141129_182/kimsdky_1417233053231sxwjK_JPEG/KakaoTalk_20141030_123927507.jpg?type=w2");
+        background-size:cover;
+        position: absolute;
+        right: 0;
+    }
+
+    #startBtn {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:80px;
+        height:80px;
+        border-radius:80px;
+        background:#fff;
+        border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+        border: 2px solid;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- 룰렛 테두리 -->
+    <div class="roulette">
+        <!-- 룰렛 배경 -->
+        <div class="roulette-bg">
+            <div id="item"></div>
+        </div>
+
+        <button type="button" id="startBtn">START</button>
+    </div>
+</body>
+<script>
+    /**
+     * 1. 입력값을 받는다
+     * 2. 입력값에 80% 이상부터는 속도가 증가한다
+     * 3. 속도의 증가는 10%씩이다.
+     * 
+     * 변수 i를
+     * 0 ~ 입력값까지 a function에서 i++
+     * 
+     * a function 안에서는 settime으로 time만큼 지연후 a function을 i가 입력값까지 올때까지 
+     * 재 실행
+     * 반복문 사용하지말고 if문으로만 작업하시오
+     * 
+     * (1) animation 키프레임으로 어피치 계속 한바퀴 달리는거 구현 (클래스명은 .runnig)
+     * (2) start 버튼 클릭하면 클레스(.running)를 붙혀 동작되도록
+     * (3) time에 따라 속도 주면서 달리도록
+     * (4) 
+    */
+       
+     
+     // START 버튼
+     let button = document.getElementById('startBtn');
+
+     // START 버튼 클릭 시 이벤트 함수 실행
+     button.addEventListener("click", rouletteStart);
+
+     function rouletteStart() {
+        // 입력 받은 값
+         var number = window.prompt('숫자를 입력해주세요');
+
+         // 0.3초씩 누적해서 등장하도록
+         const interval = 300;
+
+        // 입력값에 80%
+        var maxNumber = number * 0.8;
+    
+         // time 초기값
+         let time = 0;
+
+         // 룰렛이 돌아간다~~
+        for (let list = 1; list <= number; list++) {
+            /**
+             * 80% 미만일 때
+             * 디폴트 0.3 초로 출력되도록
+             * */ 
+            if (list < maxNumber) {
+                time += interval
+
+                setTimeout((delayTime) => {
+                    console.log('[1]', list,' | ', Math.floor(delayTime)); 
+                }, time, time);
+            } 
+            /**
+             * 80% 이상일 때는 출력되는 시간이 (time * 10%) 이처럼 증가된다.
+             * */
+
+            else {            
+                time *=  1.1;
+
+                setTimeout((delayTime)=> {
+                    console.log('[2]', list, ' | ', Math.floor(delayTime))
+                }, time, time)
+            }               
+        } 
+
+        
+        function myFunc() {
+            let apeach = document.getElementById('item');
+
+            apeach.style.left="50px"
+        }
+     }
+     
+
+    
+</script>
+</html>
+
+    
+     
