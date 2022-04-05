@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1부터 10까지 for문 없이 더하기</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //--------------------------
+    // for문 쓸 경우
+
+    function sumTo1(n) {
+        let sum = 0;
+
+        for (let i = 1; i <= n; i++) {
+            sum += i;
+        }
+        return sum;
+        }
+
+        console.log('for문 --->', sumTo1(10));
+
+    //--------------------------
+    // 재귀함수
+
+    function sumTo2(n) {
+        if (n === 1) return 1;
+        // return 1은 정상 종료 되었으나 다른 무엇이나 있음을 나타낸다.
+        /*
+        
+        0 : 정상종료
+        -1 : 에러발생
+        1이상 숫자 : 정상 종료 되었으나 다른 무엇인가 있음을 나타냄
+        -2 같은 숫자 : 에러 발생했으나 구체적으로 무엇이다를 나타냄
+
+        */
+        return n + sumTo2(n - 1);
+        }
+
+        console.log('재귀함수 --->', sumTo2(10));
+
+    //-------------------------
+    // 등차수열의 합공식
+
+    function sumTo3(n) {
+        return n * (n + 1) / 2;
+        }
+
+        console.log('등차수열의 합공식 --->', sumTo3(10));
+</script>
+</html>

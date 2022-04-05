@@ -13,24 +13,68 @@
         height: 400px;
     }
     .roulette-bg {
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 350px;
-        height: 350px;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
-        background-color: pink;
+        background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); 
     }
     #item {
         width:20%;
         height:20%;
         transform-origin: center;
         float: right;
-        background-image: url("https://mblogthumb-phinf.pstatic.net/20141129_182/kimsdky_1417233053231sxwjK_JPEG/KakaoTalk_20141030_123927507.jpg?type=w2");
-        background-size:cover;
         position: absolute;
         right: 0;
+        z-index: 100;
+    }
+
+    #item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @keyframes move {
+        0% {
+            top: 0;
+            right: 0;
+        }
+
+        20% {
+            top: 0;
+            right: 80%;
+        }
+        
+        40% {
+            right: 80%;
+            bottom: 50%;
+        }
+
+        60% {
+            right: 80%;
+            bottom: 0;
+        }
+
+        70% {
+            right: 50%;
+            bottom: 0;
+        }
+
+        80% {
+            right: 0;
+            bottom: 0;
+        }
+
+        100% {
+            right: 0;
+            bottom: 50%;
+        }
+    }
+
+    #item.running {
+        animation-name: move;
+        animation-delay: 300ms;
+        animation-duration: 300ms;
+        animation-iteration-count: infinite;        
     }
 
     #startBtn {
@@ -46,6 +90,84 @@
         border: 2px solid;
         cursor: pointer;
     }
+
+    .box-top {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .box-top li {
+        width: 20%;
+        height: 100%;
+        background-color:#0fb8ad;
+        display: inline-flex;
+        list-style: none;
+        border: 1px solid #000;
+    }
+
+    .box-bottom {
+        width: 100%;
+        height: 20%;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        display: flex;
+        left: 0;
+        position: absolute;
+    }
+
+    .box-bottom li {
+        width: 20%;
+        height: 100%;
+        background-color:#0fb8ad;
+        display: inline-flex;
+        list-style: none;
+        border: 1px solid #000;
+    }
+    
+    .box-left {
+        width: 78px;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+        top:0;
+        align-items: flex-start;
+    }
+
+    .box-left li {
+        width: 100%;
+        height: 100%;
+        background-color:#0fb8ad;
+        list-style: none;
+        border: 1px solid #000;
+    }
+
+    .box-right {
+        width: 78px;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        padding: 0;        
+        flex-direction: column-reverse;
+        display: flex;
+        right: 0;
+        top: 0;
+    }
+
+    .box-right li {
+        width: 100%;
+        height: 100%;
+        background-color:#0fb8ad;
+        list-style: none;
+        border: 1px solid #000;
+        display: inline-flex;
+    }
 </style>
 
 <body>
@@ -53,7 +175,43 @@
     <div class="roulette">
         <!-- 룰렛 배경 -->
         <div class="roulette-bg">
-            <div id="item"></div>
+            <div id="item">
+                <img src="https://mblogthumb-phinf.pstatic.net/20141129_182/kimsdky_1417233053231sxwjK_JPEG/KakaoTalk_20141030_123927507.jpg?type=w2" alt="어피치">
+            </div>
+
+            <ul class="box-top">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <ul class="box-left">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <ul class="box-right">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            
+
+            <ul class="box-bottom">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
 
         <button type="button" id="startBtn">START</button>
@@ -89,47 +247,25 @@
         // 입력 받은 값
          var number = window.prompt('숫자를 입력해주세요');
 
-         // 0.3초씩 누적해서 등장하도록
-         const interval = 300;
-
-        // 입력값에 80%
-        var maxNumber = number * 0.8;
+         // 입력값에 80%
+         var maxNumber = number * 0.8;
     
          // time 초기값
-         let time = 0;
+         let time = 300;
 
-         // 룰렛이 돌아간다~~
-        for (let list = 1; list <= number; list++) {
-            /**
-             * 80% 미만일 때
-             * 디폴트 0.3 초로 출력되도록
-             * */ 
-            if (list < maxNumber) {
-                time += interval
+         document.getElementById('item').classList.add('running');
 
-                setTimeout((delayTime) => {
-                    console.log('[1]', list,' | ', Math.floor(delayTime)); 
-                }, time, time);
-            } 
-            /**
-             * 80% 이상일 때는 출력되는 시간이 (time * 10%) 이처럼 증가된다.
-             * */
-
-            else {            
+         if (list > maxNumber) {
                 time *=  1.1;
 
-                setTimeout((delayTime)=> {
-                    console.log('[2]', list, ' | ', Math.floor(delayTime))
+                setTimeout((delayTime)=> {                    
+                    console.log('[2]', list, ' | ', Math.floor(delayTime))        
+                    document.getElementById('item').style.animationDuration = `${delayTime}ms`      
                 }, time, time)
-            }               
-        } 
-
-        
-        function myFunc() {
-            let apeach = document.getElementById('item');
-
-            apeach.style.left="50px"
-        }
+            } else {
+                document.getElementById('item').classList.remove('running');
+                console.log('list--->', list)
+            }
      }
      
 
