@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>심플 가상자산 자동 슬라이드</title>
+    <!-- 
+      순서도
+
+      1. 가상자산 리스트 배열을 setTimeout을 걸어 움직이도록 한다.
+      그 px만큼 ! 계속 움직이도록, 
+
+      멈추는 경우는
+      1. 내가 그 dom을 클릭했을 때
+      2. 가상자산 코인이 끝까지 닿았을 때
+     -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul class="slider">
+          <li class="item">1st</li>
+          <li class="item">2nd</li>
+          <li class="item">3rd</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      var slideWrapper = document.querySelector(".container");
+      var slides = document.querySelectorAll(".item");
+      var totalSlides = slides.length; // item의 갯수
+
+      var sliderWidth = slideWrapper.clientWidth; // container의 width
+      var slideIndex = 0;
+      var slider = document.querySelector(".slider");
+
+      slider.style.width = sliderWidth * totalSlides + "px";
+
+      showSlides();
+
+      function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+          slider.style.left = -(sliderWidth * slideIndex) + "px";
+        }
+        slideIndex++;
+        if (slideIndex === totalSlides) {
+          slideIndex = 0;
+        }
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+  </body>
+</html>
