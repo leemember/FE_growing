@@ -7,127 +7,42 @@
     <title>슬라이더</title>
 </head>
 <body>
-    <div class="menu" style="width: 3000px; background-color: darksalmon; animation: 15s all;">
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />ㅇ<br />
-        ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />
-    </div>
-    <div class="menu">
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />ㅇ<br />
-        ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />
-    </div>
-    <div class="menu">
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />
-        ㅇ<br />ㅇ<br />
-        ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />ㅇ<br />
-    </div>
-</body>
+    <div class="menu" style="width: 3000px; height: 500px; background-color: darksalmon; animation: 15s all;"></div></body>
 <script>
+    // 엘리먼트
     let $elBox = document.querySelector('div');
-    let width = $elBox.getBoundingClientRect();
-        
-    console.log('width ---->', width)
+    
+    // 슬라이드 스피드
+    let sliderSpeed = 100;
 
+    // 슬라이드 멈추기 위해 고유한 id값 부여
+    let sliderStop;
 
-    window.scrollTo({
+    /**
+     * 멈추는 조건
+     * 
+     * 1. 스크롤 됐을때
+     * 2. 마지막 값까지 도달했을 때
+     */
+     $elBox.addEventListener('click', () => {
+         cancelAnimationFrame(sliderStop)
+         console.log('멈춰라')
+     })
+     
+
+    function render () {
+        // 슬라이드 100 += 3씩 누적해서 숫자가 작을수록 스피드도 느림
+        sliderSpeed += 3;
+
+        window.scrollTo({
             top:0,
-            left:3000,
-            behavior: "smooth"
+            left: sliderSpeed,
         })
+        
+        sliderStop = requestAnimationFrame(render);
+        console.log(sliderStop)
+    }
 
-    // setTimeout(function(){
-       
-    // }, 5000)
-    
-    
+    render();
 </script>
 </html>
