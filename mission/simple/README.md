@@ -25,3 +25,7 @@ window.scrollTo({
 ```
 window.requestAnimationFrame(callback);
 ```
+
+### window.cancelAnimationFrame()
+
+> https://developer.mozilla.org/ko/docs/Web/API/Window/cancelAnimationFrame
