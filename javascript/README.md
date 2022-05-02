@@ -44,4 +44,85 @@ combinedFruits = [...fruits, '사과', ...fruits2]
 
 이렇게 추가가 가능하다.
 
-## 옵셔널 체이닝
+## 1. 삼항연산자를 사용하여 깔끔하게 작성해보자
+
+```
+function getResult(score) {
+
+ let result;
+
+ if(score > 5) {
+ 	result = "👍";
+  } else if (score <= 5) {
+    result = "👎";
+  }
+  return result;
+```
+
+이렇게 긴 문장의 if문을
+
+```
+function getResult(score) {
+	return score > 5 ? "👍" : "👎";
+}
+```
+
+이렇게 삼항연산자를 사용해서 작성해볼 수 있다.
+
+<br />
+
+## nullish 방식 (??)
+
+```
+function printMsg(text) {
+	let msg = text;
+
+    if (text == null || text == undefined) {
+    	msg = "hello";
+    }
+
+    console.log(msg);
+}
+```
+
+이 코드는 (??) nullish 방법을 사용해서 단축시킬 수 있다.
+이 연산자는 👉 null이나 undefined인 경우 👈를 표현한다.
+
+```
+function printMsg(text) {
+	const msg = text ?? 'hello';
+     console.log(msg);
+}
+```
+
+여기서 default 파라미터값은 undefined 일 때만 반환이 된다.
+
+```
+function printMsg(text="hello") {
+	console.log(text);
+}
+
+printMsg('hello')
+printMsg(undefined)
+printMsg(null)
+```
+
+이런 경우에 파라미터 값에 값이 있다면 그 값이 출력되고, undefined면 기본값인 hello가 출력된다. 그리고 null이라면 그냥 null을 반환해준다.
+
+## 3. OR 연산자 (||)
+
+```
+a || b
+```
+
+false인 경우에는 모두 오른쪽 문장이 실행된다.
+
+false로 취급하는 값
+
+- false
+- " " (빈 문자열)
+- undefined
+- null
+- 0
+- -0
+- NaN
