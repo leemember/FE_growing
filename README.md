@@ -1,6 +1,6 @@
 # 👩🏻‍💻 FE Growing
 
-> 실무에서 마주했던 이슈들을 어떻게 해결했는가? 그리고 경험속 러닝 포인트에 대해 기록합니다.
+> 실무에서 마주했던 이슈들을 어떻게 해결 했는지와 경험 속 러닝 포인트에 대해 기록합니다.
 
 [📍[JS] User Agent 브라우저 정보 얻기](https://github.com/leemember/FE_growing/issues/1) <Br>
 
