@@ -104,4 +104,4 @@
 
 [📕 자바스크립트의 톺아보기 2 (변수에 대한 모든것)](https://github.com/leemember/FE_growing/issues/62) <Br>
 
-[📘 자바스크립트의 특징 3 (연산자)](https://github.com/leemember/FE_growing/issues/63) <Br>
+[📘 자바스크립트의 톺아보기 3 (연산자)](https://github.com/leemember/FE_growing/issues/63) <Br>
