@@ -70,7 +70,7 @@
 
 [☁︎ react에서 innerHTML 사용하기](https://github.com/leemember/FE_growing/issues/46) <Br>
 
-[⭐️ [라우트 Params] 해당 게시글 클릭 시 파라미터 id 값에 맞춰 콘텐츠 맵핑되기](https://github.com/leemember/FE_growing/issues/47) <Br>
+[⭐️ 해당 게시글 클릭 시 파라미터 id 값에 맞춰 콘텐츠 맵핑되기](https://github.com/leemember/FE_growing/issues/47) <Br>
 
 [❤️‍🔥 로컬스토리지 window.localStorage](https://github.com/leemember/FE_growing/issues/48) <Br>
 
@@ -96,8 +96,8 @@
 
 [🤖 렌더링 할 DOM노드에 dangerouslySetInnerHTML 태그 사용시 purify 사용하자](https://github.com/leemember/FE_growing/issues/59) <Br>
 
-[📒 자바스크립트의 톺아보기 1 (JS에 특징들...)](https://github.com/leemember/FE_growing/issues/61) <Br>
+[📒 자바스크립트 톺아보기 1 (JS에 특징들...)](https://github.com/leemember/FE_growing/issues/61) <Br>
 
-[📕 자바스크립트의 톺아보기 2 (변수에 대한 모든것)](https://github.com/leemember/FE_growing/issues/62) <Br>
+[📕 자바스크립트 톺아보기 2 (변수에 대한 모든것)](https://github.com/leemember/FE_growing/issues/62) <Br>
 
-[📘 자바스크립트의 톺아보기 3 (연산자)](https://github.com/leemember/FE_growing/issues/63) <Br>
+[📘 자바스크립트 톺아보기 3 (연산자)](https://github.com/leemember/FE_growing/issues/63) <Br>
