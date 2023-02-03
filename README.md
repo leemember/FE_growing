@@ -34,8 +34,6 @@
 
 [😇 리액트 CRA 상에서 핫리로드 설정](https://github.com/leemember/FE_growing/issues/24) <Br>
 
-[💻 기본적인 리액트 코드 컨벤션](https://github.com/leemember/FE_growing/issues/25) <Br>
-
 [로컬에서 기본값으로 사용할 git 사용자 이름과 이메일 설정(global 옵션)](https://github.com/leemember/FE_growing/issues/26) <Br>
 
 [(React) 해당 위치(URL)에 접근 돼있을 시에만 적용 하자](https://github.com/leemember/FE_growing/issues/28) <Br>
@@ -97,8 +95,6 @@
 [🚌 데이터 fetching시 config 파라미터 값 불러올 때](https://github.com/leemember/FE_growing/issues/58) <Br>
 
 [🤖 렌더링 할 DOM노드에 dangerouslySetInnerHTML 태그 사용시 purify 사용하자](https://github.com/leemember/FE_growing/issues/59) <Br>
-
-[✊ 빈 공간 클릭 했을 때 모달창이 닫히도록 ! (MouseEvent)](https://github.com/leemember/FE_growing/issues/60) <Br>
 
 [📒 자바스크립트의 톺아보기 1 (JS에 특징들...)](https://github.com/leemember/FE_growing/issues/61) <Br>
 
