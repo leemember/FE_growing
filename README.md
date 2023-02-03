@@ -12,7 +12,7 @@
 
 [✨ 인기 TOP 10 코인 자동 슬라이드 모션의 트레이드 오프 (Trade-Off) 기록](https://github.com/leemember/FE_growing/issues/7) <Br>
 
-[🔎 Redux란..? mobx와 비교설명](https://github.com/leemember/FE_growing/issues/10) <Br>
+[🔎 Redux란..?](https://github.com/leemember/FE_growing/issues/10) <Br>
 
 [💓 useRef element (요소) 잡을 경우](https://github.com/leemember/FE_growing/issues/14) <Br>
 
