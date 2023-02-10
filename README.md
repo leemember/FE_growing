@@ -106,3 +106,6 @@
 
 [📙 자바스크립트 톺아보기 5 (함수)](https://github.com/leemember/FE_growing/issues/65) <Br>
 
+[📍 자바스크립트 특징 6 (객체란? / 생성자 함수 / 객체 리터럴) 
+](https://github.com/leemember/FE_growing/issues/66) <Br>
+
