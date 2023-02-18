@@ -16,17 +16,21 @@
 
 [📙 자바스크립트 톺아보기 5 (함수)](https://github.com/leemember/FE_growing/issues/65) <Br>
 
-[📍 자바스크립트 특징 7 (객체란? / 생성자 함수 / 객체 리터럴) 
+[📍 자바스크립트 특징 6 (객체란? / 생성자 함수 / 객체 리터럴) 
 ](https://github.com/leemember/FE_growing/issues/66) <Br>
 
-[🤖 자바스크립트 특징 8 (클래스) 
+[🤖 자바스크립트 특징 7 (클래스) 
 ](https://github.com/leemember/FE_growing/issues/67) <Br>
 
-[🔻 자바스크립트 특징 9 (배열 / 고차함수) 
+[🔻 자바스크립트 특징 8 (배열 / 고차함수) 
 ](https://github.com/leemember/FE_growing/issues/68) <Br>
 
-[🔴 자바스크립트 특징 10 (Map, Set)
+[🔴 자바스크립트 특징 9 (이터러블과 제너레이터)
 ](https://github.com/leemember/FE_growing/issues/69) <Br>
+
+  
+[🟨 자바스크립트 특징 10 (Map과 Set)
+](https://github.com/leemember/FE_growing/issues/70) <Br>
 
 
 ### 타입스크립트
