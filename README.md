@@ -32,6 +32,14 @@
 [🟨 자바스크립트 특징 10 (Map과 Set)
 ](https://github.com/leemember/FE_growing/issues/70) <Br>
 
+[🟠 자바스크립트 특징 11 (연산자)
+](https://github.com/leemember/FE_growing/issues/71) <Br>
+
+[🧩 자바스크립트의 특징 12 (주석, 에러처리, 모듈화)
+](https://github.com/leemember/FE_growing/issues/72) <Br>
+
+[👀 자바스크립트 특징 13 (비동기)
+](https://github.com/leemember/FE_growing/issues/73) <Br>
 
 ### 타입스크립트
   
