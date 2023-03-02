@@ -41,6 +41,22 @@
 [👀 자바스크립트 특징 13 (비동기)
 ](https://github.com/leemember/FE_growing/issues/73) <Br>
 
+[💓 자바스크립트 면접 단골 개념들 1 (스코프, 가비지 컬렉터, 렉시컬 환경, 호이스팅, var 변수, 엄격모드)
+](https://github.com/leemember/FE_growing/issues/74) <Br>
+
+[📚 자바스크립트 면접 단골 개념들 2 (프로토타입)
+](https://github.com/leemember/FE_growing/issues/75) <Br>
+
+[😶 자바스크립트 면접 단골 개념들 3 (클로져)
+](https://github.com/leemember/FE_growing/issues/76) <Br>
+
+[👩🏻‍💻 자바스크립트 면접 단골 개념들 4 (This)
+](https://github.com/leemember/FE_growing/issues/77) <Br>
+
+[🙆🏻‍♀️ 자바스크립트 면접 단골 개념들 5 (바벨)
+](https://github.com/leemember/FE_growing/issues/78) <Br>
+
+
 ### 타입스크립트
   
 
