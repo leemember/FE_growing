@@ -56,7 +56,11 @@
 [🙆🏻‍♀️ 자바스크립트 면접 단골 개념들 5 (바벨)
 ](https://github.com/leemember/FE_growing/issues/78) <Br>
 
-
+### 프론트엔드가 알아야할 웹브라우저에 대한 것들
+  
+[⭐️ [브라우저] Web APIs (window)
+](https://github.com/leemember/FE_growing/issues/79) <Br>
+  
 ### 타입스크립트
   
 
@@ -65,6 +69,16 @@
 
 
 ### 네트워크
+  
+  
+  
+### CS (자료구조/알고리즘)
+
+[🍿 자료구조 개념 정리 (1) 시간복잡도, 빅오 표기법, 배열, 연결리스트
+](https://github.com/leemember/FE_growing/issues/80) <Br>
+  
+[🍿 자료구조 개념 정리 (2) 스택, 큐, 덱, 해시테이블, 셋
+](https://github.com/leemember/FE_growing/issues/81) <Br>
 
 
 ------------------
