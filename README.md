@@ -69,7 +69,9 @@
 
 
 ### 네트워크
-  
+[🟢 HTTP 기본, 역사, 클라이언트 서버 구조, 무상태 프로토콜, 비 연결성, HTTP 메시지](https://github.com/leemember/FE_growing/issues/84) <Br>
+[🟢 HTTP 개념 알아가기 : IP 프로토콜의 한계](https://github.com/leemember/FE_growing/issues/82) <Br>
+[🟢 HTTP 개념 알아가기 (2) : PORT 와 DNS](https://github.com/leemember/FE_growing/issues/83) <Br>
   
   
 ### CS (자료구조/알고리즘)
