@@ -183,3 +183,10 @@
 [🚌 데이터 fetching시 config 파라미터 값 불러올 때](https://github.com/leemember/FE_growing/issues/58) <Br>
 
 [🤖 렌더링 할 DOM노드에 dangerouslySetInnerHTML 태그 사용시 purify 사용하자](https://github.com/leemember/FE_growing/issues/59) <Br>
+
+-----------------------
+
+### 스터디
+
+#### 클린코드
+![image](https://github.com/leemember/FE_growing/assets/71499150/142b8f9d-398d-4bfc-8b2c-f2d7ccd73945)
