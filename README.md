@@ -1,5 +1,93 @@
 # 👩🏻‍💻 FE Growing
 
+
+## TIL
+  - 다시 한 번 리마인딩하기
+
+### 자바스크립트
+
+[📒 자바스크립트 톺아보기 1 (JS에 특징들...)](https://github.com/leemember/FE_growing/issues/61) <Br>
+
+[📕 자바스크립트 톺아보기 2 (변수에 대한 모든것)](https://github.com/leemember/FE_growing/issues/62) <Br>
+
+[📘 자바스크립트 톺아보기 3 (연산자)](https://github.com/leemember/FE_growing/issues/63) <Br>
+
+[📗 자바스크립트 톺아보기 4 (제어문)](https://github.com/leemember/FE_growing/issues/64) <Br>
+
+[📙 자바스크립트 톺아보기 5 (함수)](https://github.com/leemember/FE_growing/issues/65) <Br>
+
+[📍 자바스크립트 특징 6 (객체란? / 생성자 함수 / 객체 리터럴) 
+](https://github.com/leemember/FE_growing/issues/66) <Br>
+
+[🤖 자바스크립트 특징 7 (클래스) 
+](https://github.com/leemember/FE_growing/issues/67) <Br>
+
+[🔻 자바스크립트 특징 8 (배열 / 고차함수) 
+](https://github.com/leemember/FE_growing/issues/68) <Br>
+
+[🔴 자바스크립트 특징 9 (이터러블과 제너레이터)
+](https://github.com/leemember/FE_growing/issues/69) <Br>
+
+  
+[🟨 자바스크립트 특징 10 (Map과 Set)
+](https://github.com/leemember/FE_growing/issues/70) <Br>
+
+[🟠 자바스크립트 특징 11 (연산자)
+](https://github.com/leemember/FE_growing/issues/71) <Br>
+
+[🧩 자바스크립트의 특징 12 (주석, 에러처리, 모듈화)
+](https://github.com/leemember/FE_growing/issues/72) <Br>
+
+[👀 자바스크립트 특징 13 (비동기)
+](https://github.com/leemember/FE_growing/issues/73) <Br>
+
+[💓 자바스크립트 면접 단골 개념들 1 (스코프, 가비지 컬렉터, 렉시컬 환경, 호이스팅, var 변수, 엄격모드)
+](https://github.com/leemember/FE_growing/issues/74) <Br>
+
+[📚 자바스크립트 면접 단골 개념들 2 (프로토타입)
+](https://github.com/leemember/FE_growing/issues/75) <Br>
+
+[😶 자바스크립트 면접 단골 개념들 3 (클로져)
+](https://github.com/leemember/FE_growing/issues/76) <Br>
+
+[👩🏻‍💻 자바스크립트 면접 단골 개념들 4 (This)
+](https://github.com/leemember/FE_growing/issues/77) <Br>
+
+[🙆🏻‍♀️ 자바스크립트 면접 단골 개념들 5 (바벨)
+](https://github.com/leemember/FE_growing/issues/78) <Br>
+
+### 프론트엔드가 알아야할 웹브라우저에 대한 것들
+  
+[⭐️ [브라우저] Web APIs (window)
+](https://github.com/leemember/FE_growing/issues/79) <Br>
+  
+### 타입스크립트
+  
+
+### 리액트
+
+
+
+### 네트워크
+[🟢 HTTP 기본, 역사, 클라이언트 서버 구조, 무상태 프로토콜, 비 연결성, HTTP 메시지](https://github.com/leemember/FE_growing/issues/84) <Br>
+
+[🟢 HTTP 개념 알아가기 : IP 프로토콜의 한계](https://github.com/leemember/FE_growing/issues/82) <Br>
+
+[🟢 HTTP 개념 알아가기 (2) : PORT 와 DNS](https://github.com/leemember/FE_growing/issues/83) <Br>
+  
+  
+### CS (자료구조/알고리즘)
+
+[🍿 자료구조 개념 정리 (1) 시간복잡도, 빅오 표기법, 배열, 연결리스트
+](https://github.com/leemember/FE_growing/issues/80) <Br>
+  
+[🍿 자료구조 개념 정리 (2) 스택, 큐, 덱, 해시테이블, 셋
+](https://github.com/leemember/FE_growing/issues/81) <Br>
+
+
+------------------
+
+
 > 실무에서 마주했던 이슈들을 어떻게 해결 했는지와 경험 속 러닝 포인트에 대해 기록합니다.
 
 [📍[JS] User Agent 브라우저 정보 얻기](https://github.com/leemember/FE_growing/issues/1) <Br>
@@ -96,39 +184,4 @@
 
 [🤖 렌더링 할 DOM노드에 dangerouslySetInnerHTML 태그 사용시 purify 사용하자](https://github.com/leemember/FE_growing/issues/59) <Br>
 
-------------------
-
-## TIL
-  - 다시 한 번 리마인딩하기
-
-### 자바스크립트
-
-[📒 자바스크립트 톺아보기 1 (JS에 특징들...)](https://github.com/leemember/FE_growing/issues/61) <Br>
-
-[📕 자바스크립트 톺아보기 2 (변수에 대한 모든것)](https://github.com/leemember/FE_growing/issues/62) <Br>
-
-[📘 자바스크립트 톺아보기 3 (연산자)](https://github.com/leemember/FE_growing/issues/63) <Br>
-
-[📗 자바스크립트 톺아보기 4 (제어문)](https://github.com/leemember/FE_growing/issues/64) <Br>
-
-[📙 자바스크립트 톺아보기 5 (함수)](https://github.com/leemember/FE_growing/issues/65) <Br>
-
-[📍 자바스크립트 특징 7 (객체란? / 생성자 함수 / 객체 리터럴) 
-](https://github.com/leemember/FE_growing/issues/66) <Br>
-
-[🤖 자바스크립트 특징 8 (클래스) 
-](https://github.com/leemember/FE_growing/issues/67) <Br>
-
-[🔻 자바스크립트 특징 9 (배열 / 고차함수) 
-](https://github.com/leemember/FE_growing/issues/68) <Br>
-
-
-
-### 타입스크립트
-  
-
-### 리액트
-
-
-### 네트워크
-
+-----------------------
