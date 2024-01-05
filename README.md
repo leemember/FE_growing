@@ -184,7 +184,7 @@
 
 [🤖 렌더링 할 DOM노드에 dangerouslySetInnerHTML 태그 사용시 purify 사용하자](https://github.com/leemember/FE_growing/issues/59) <Br>
 
-[🙃 HTML 이메일 템플릿 폼 작업 시 유의사항]([https://github.com/leemember/FE_growing/issues/87) <Br>
+[🙃 HTML 이메일 템플릿 폼 작업 시 유의사항](https://github.com/leemember/FE_growing/issues/87) <Br>
 
 
 -----------------------
